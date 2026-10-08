@@ -1,0 +1,3 @@
+filename	state	source_file	n_channels	n_samples	duration_s
+ieeg/sub-P004_task-ictal_run-01_ieeg.vhdr	ictal	SEEG dataset/P004/ictal state/sz3.mat	79	100001	50.0005
+ieeg/sub-P004_task-interictal_run-01_ieeg.vhdr	interictal	SEEG dataset/P004/interictal state/sz3.mat	79	132001	66.0005

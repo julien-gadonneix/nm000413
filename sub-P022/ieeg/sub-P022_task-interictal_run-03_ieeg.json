@@ -1,0 +1,21 @@
+{
+  "TaskName": "interictal",
+  "TaskDescription": "Interictal segment selected by the dataset authors from clinical SEEG monitoring (release folder \"interictal state\").",
+  "InstitutionName": "n/a",
+  "SamplingFrequency": 2000.0,
+  "PowerLineFrequency": 50,
+  "SoftwareFilters": "n/a",
+  "HardwareFilters": "n/a",
+  "iEEGReference": "n/a",
+  "SEEGChannelCount": 74,
+  "MiscChannelCount": 2,
+  "EEGChannelCount": 2,
+  "ECGChannelCount": 1,
+  "ECOGChannelCount": 0,
+  "TriggerChannelCount": 0,
+  "RecordingType": "continuous",
+  "RecordingDuration": 317.0005,
+  "RecordingDescription": "Release file \"SEEG dataset/P022/interictal state/sz3.mat\" (data (samples x channels) + ch_names + sfreq). The release does not document where the segment starts relative to seizure onset.",
+  "iEEGPlacementScheme": "Stereotactic depth electrodes, clinical placement",
+  "ElectricalStimulation": false
+}

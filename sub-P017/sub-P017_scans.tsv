@@ -1,0 +1,10 @@
+filename	state	source_file	n_channels	n_samples	duration_s
+ieeg/sub-P017_task-ictal_run-01_ieeg.vhdr	ictal	SEEG dataset/P017/ictal state/sz1.mat	126	40001	20.0005
+ieeg/sub-P017_task-ictal_run-02_ieeg.vhdr	ictal	SEEG dataset/P017/ictal state/sz2.mat	126	100001	50.0005
+ieeg/sub-P017_task-ictal_run-03_ieeg.vhdr	ictal	SEEG dataset/P017/ictal state/sz3.mat	126	22001	11.0005
+ieeg/sub-P017_task-ictal_run-04_ieeg.vhdr	ictal	SEEG dataset/P017/ictal state/sz5-1.mat	126	28001	14.0005
+ieeg/sub-P017_task-interictal_run-01_ieeg.vhdr	interictal	SEEG dataset/P017/interictal state/SZ1.mat	126	720001	360.0005
+ieeg/sub-P017_task-interictal_run-02_ieeg.vhdr	interictal	SEEG dataset/P017/interictal state/SZ2.mat	126	260001	130.0005
+ieeg/sub-P017_task-interictal_run-03_ieeg.vhdr	interictal	SEEG dataset/P017/interictal state/SZ3.mat	126	540001	270.0005
+ieeg/sub-P017_task-interictal_run-04_ieeg.vhdr	interictal	SEEG dataset/P017/interictal state/SZ4.mat	126	754001	377.0005
+ieeg/sub-P017_task-interictal_run-05_ieeg.vhdr	interictal	SEEG dataset/P017/interictal state/SZ5.mat	126	618001	309.0005

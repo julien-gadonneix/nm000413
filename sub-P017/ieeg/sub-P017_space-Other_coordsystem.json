@@ -1,0 +1,5 @@
+{
+  "iEEGCoordinateSystem": "Other",
+  "iEEGCoordinateUnits": "n/a",
+  "iEEGCoordinateSystemDescription": "No electrode coordinates are included in the source release (Zenodo 17272689); x, y, z are n/a."
+}

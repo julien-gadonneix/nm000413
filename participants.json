@@ -1,0 +1,47 @@
+{
+  "participant_id": {
+    "Description": "BIDS label = patient ID of the release (P001-P029)"
+  },
+  "sex": {
+    "Description": "Sex (release clinical information table)",
+    "Levels": {
+      "M": "male",
+      "F": "female"
+    }
+  },
+  "age": {
+    "Description": "Age at surgery (release clinical information table)",
+    "Units": "year"
+  },
+  "age_of_onset": {
+    "Description": "Age at epilepsy onset (release table; n/a where the table has a backslash)",
+    "Units": "year"
+  },
+  "mri": {
+    "Description": "MRI finding as coded in the release table (P / N; the release does not define the codes, presumably positive / negative)"
+  },
+  "n_seizures": {
+    "Description": "Number of seizures (release table)"
+  },
+  "n_electrodes": {
+    "Description": "Number of implanted SEEG electrodes (release table)"
+  },
+  "n_contacts": {
+    "Description": "Number of contacts (release table)"
+  },
+  "ez": {
+    "Description": "Epileptogenic zone (release clinical table)"
+  },
+  "therapy": {
+    "Description": "Surgical therapy (release table: Resection / Ablation / Ablation & Resection)"
+  },
+  "outcome": {
+    "Description": "Surgical outcome, Engel class (release table)"
+  },
+  "ez_channel_ids": {
+    "Description": "Channel-level EZ annotation: channel numbers as listed in the release file \"channel level EZ annotations.xlsx\". The release does not say whether the numbers index the channel order of the .mat files (1-based) or the original montage; they are copied verbatim."
+  },
+  "deleted_channel_ids": {
+    "Description": "Deleted channels (bad contacts), channel numbers verbatim from the same release file (same caveat)"
+  }
+}

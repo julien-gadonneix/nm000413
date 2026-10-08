@@ -1,0 +1,17 @@
+{
+  "Name": "DRE-LZSH authors' result tables (HFO rates, power spectra)",
+  "BIDSVersion": "1.10.0",
+  "DatasetType": "derivative",
+  "GeneratedBy": [
+    {
+      "Name": "DRE-LZSH authors (Zenodo 17272689, folder Results/)",
+      "Description": "Copied verbatim from the release"
+    }
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5281/zenodo.17272689"
+    }
+  ],
+  "License": "CC-BY-4.0"
+}
