@@ -1,0 +1,84 @@
+{
+  "version": "2.0",
+  "pipeline_stage": "validated",
+  "authors": {
+    "Wang Yalin": {
+      "orcid": "0000-0002-4440-7705",
+      "affiliations": [
+        {
+          "name": "Lanzhou University",
+          "identifier": "https://ror.org/01mkqqe32",
+          "scheme": "ROR"
+        }
+      ]
+    }
+  },
+  "related_identifiers": [
+    {
+      "identifier": "10.5281/zenodo.17272689",
+      "identifier_type": "DOI",
+      "relation_type": "IsDerivedFrom"
+    },
+    {
+      "identifier": "https://github.com/nemarDatasets/nm000413",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "https://nemar.org/dataset/nm000413",
+      "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    }
+  ],
+  "title": "DRE-LZSH: SEEG benchmark dataset for drug-resistant epilepsy (ictal and interictal segments, 29 patients)",
+  "license": "CC-BY-4.0",
+  "dataset_type": "raw",
+  "resource_type_general": "Dataset",
+  "modalities": [
+    "ieeg"
+  ],
+  "resource_type_specific": "iEEG Dataset",
+  "sizes": [
+    "64.18 GB (571 files)"
+  ],
+  "formats": [
+    ".eeg",
+    ".ipynb",
+    ".json",
+    ".m",
+    ".mat",
+    ".md",
+    ".tsv",
+    ".vhdr",
+    ".vmrk",
+    ".xlsx"
+  ],
+  "description": "This dataset provides stereo-EEG (SEEG) recordings from 29 patients with drug-resistant epilepsy, comprising ictal (seizure) and interictal segments sampled at 2000 Hz. It includes clinical information and channel-level epileptogenic-zone annotations, and is intended as a benchmark for precision-medicine research in epilepsy. The data are re-packaged in iEEG-BIDS from the authors' Zenodo release, together with the authors' derived HFO-rate and power-spectrum result tables and analysis code.",
+  "methods_description": "SEEG segments were recorded at 2000 Hz. Seizure segments typically last 40-60 s, and interictal segments are longer. MATLAB arrays from the original release were losslessly converted to BrainVision float32 files with BIDS sidecars, without filtering, resampling, re-referencing or channel removal. Channel types were inferred from channel names. The release provides no electrode coordinates.",
+  "keywords": [
+    {
+      "term": "stereo-EEG"
+    },
+    {
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "drug-resistant epilepsy"
+    },
+    {
+      "term": "Seizures",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+    },
+    {
+      "term": "epileptogenic zone"
+    },
+    {
+      "term": "high-frequency oscillations"
+    },
+    {
+      "term": "benchmark"
+    }
+  ],
+  "source_hash": "6966bce9d50355fd164ed715221c9eebcb08e51fc66146bff97c80c458ba02d2"
+}
