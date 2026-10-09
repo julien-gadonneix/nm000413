@@ -39,7 +39,7 @@
     "Description": "Surgical outcome, Engel class (release table)"
   },
   "ez_channel_ids": {
-    "Description": "Channel-level EZ annotation: channel numbers as listed in the release file \"channel level EZ annotations.xlsx\". The release does not say whether the numbers index the channel order of the .mat files (1-based) or the original montage; they are copied verbatim."
+    "Description": "Channel-level EZ annotation: channel numbers as listed in the release file \"channel level EZ annotations.xlsx\". The release does not say whether the numbers index the channel order of the .mat files (1-based) or the original montage; they are copied verbatim. P014: the release row is identical to P007's (EZ and deleted lists) and 9 of its numbers exceed P014's channel count; probably copied from P007 in the release (see README)."
   },
   "deleted_channel_ids": {
     "Description": "Deleted channels (bad contacts), channel numbers verbatim from the same release file (same caveat)"

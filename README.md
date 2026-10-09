@@ -16,6 +16,8 @@ deleted, or bad, channels) verbatim. The release does not say whether these numb
 `.mat` files or the original montage. Some deleted-channel numbers exceed the number of channels in a file, so they are
 not mapped onto `channels.tsv`.
 
+**Note on P014 (added 2026-10-09).** In the release file `information list/channel level EZ annotations.xlsx`, the row of P014 (EZ "Right occipital pole, medial posterior cingulate gyrus, and mid-posterior hippocampus") has exactly the same EZ channel list (`11 23 24 18 19 21 35 ... 112-118`) and deleted-channel list (`5 6 20 38 121 122`) as P007 (EZ "Left inferior frontal gyrus, posterior middle frontal gyrus, and part of the orbitofrontal cortex"). Nine of these numbers (112-118, 121, 122) are larger than the channel count of every P014 file (85 or 107 channels; the clinical table gives 86 contacts). The P014 row is therefore probably a copy of the P007 row in the release. `participants.tsv` reproduces the release unchanged (checked against the deposit on 2026-10-09); do not use the P014 `ez_channel_ids` and `deleted_channel_ids` without confirmation from the authors.
+
 ## Recordings
 - `task-ictal`: release folder `ictal state` (seizure segments, typically 40-60 s). `task-interictal`: folder
   `interictal state` (longer segments). `run-<k>` follows the natural order of the release file names (`sz1`, `sz2`, ...,
