@@ -2,8 +2,8 @@
   "version": "2.0",
   "pipeline_stage": "validated",
   "title": "DRE-LZSH: SEEG benchmark dataset for drug-resistant epilepsy (ictal and interictal segments, 29 patients)",
-  "description": "This dataset contains stereo-EEG (SEEG) recordings from 29 patients with drug-resistant epilepsy, including ictal (seizure) and interictal segments sampled at 2000 Hz. It is accompanied by clinical information, channel-level epileptogenic-zone annotations, and the authors' high-frequency oscillation and 1/f spectral result tables. The data are re-packaged in iEEG-BIDS from the original Zenodo release as a benchmark for precision-medicine research in epilepsy.",
-  "methods_description": "Segments of SEEG data were exported from the original release as MATLAB arrays (seizure segments typically 40-60 s, plus longer interictal segments) at 2000 Hz. They were losslessly re-packaged into BrainVision float32 files with BIDS sidecars, with no filtering, resampling, re-referencing or channel removal. Channel types were inferred from channel names, and no electrode coordinates were available.",
+  "description": "DRE-LZSH is a stereo-EEG (SEEG) benchmark dataset from 29 patients with drug-resistant epilepsy, containing ictal (seizure) and interictal segments recorded at 2000 Hz. It includes clinical information and channel-level epileptogenic zone annotations, and all patients had Engel class I surgical outcomes. The data are re-packaged in iEEG-BIDS from the authors' Zenodo release, together with the authors' HFO detection results and code.",
+  "methods_description": "SEEG was recorded at 2000 Hz from 29 patients, with seizure segments typically 40-60 s and longer interictal segments. The original MATLAB arrays were converted losslessly to BrainVision float32 with BIDS sidecars. No filtering, resampling, re-referencing or channel removal was applied.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -23,17 +23,18 @@
       "term": "stereo-EEG"
     },
     {
-      "term": "SEEG"
-    },
-    {
-      "term": "Drug Resistant Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
+      "term": "drug-resistant epilepsy"
     },
     {
       "term": "Seizures",
       "subject_scheme": "MeSH",
       "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
+    },
+    {
+      "term": "epileptogenic zone"
+    },
+    {
+      "term": "high-frequency oscillations"
     },
     {
       "term": "ictal"
@@ -42,10 +43,7 @@
       "term": "interictal"
     },
     {
-      "term": "epileptogenic zone"
-    },
-    {
-      "term": "high-frequency oscillations"
+      "term": "benchmark"
     }
   ],
   "related_identifiers": [
@@ -86,5 +84,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "092a498d8d4fbc5b4a0bfd6be83ce83896d703b7a55046c9110c816605fdc8ed"
+  "source_hash": "e16927d8f7015bcd5c550e1d5edb323474019fda0add45798b7b3237260086b2"
 }
