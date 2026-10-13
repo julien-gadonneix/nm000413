@@ -1,3 +1,5 @@
+[![DOI](https://img.shields.io/badge/DOI-10.82901%2Fnemar.nm000413-blue)](https://doi.org/10.82901/nemar.nm000413)
+
 # DRE-LZSH: SEEG benchmark dataset for drug-resistant epilepsy
 
 Stereo-EEG (SEEG) segments from **29 patients with drug-resistant epilepsy** (P001-P029). For each patient there are
