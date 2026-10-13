@@ -3,16 +3,43 @@
   "BIDSVersion": "1.10.0",
   "DatasetType": "raw",
   "License": "CC-BY-4.0",
-  "Authors": ["Wang Yalin"],
+  "Authors": [
+    "Wang Yalin"
+  ],
   "Acknowledgements": "Data release: Zenodo record 17272689 'DRE-LZSH: A SEEG Benchmark Dataset and Pilot Exploration for Advancing Precision Medicine in Drug-Resistant Epilepsy' (creator listed as 'Yalin, Wang'). BIDS conversion: ieeg-nemar-20261005 campaign (batch-3, lane W2); no signal processing applied.",
   "HowToAcknowledge": "Please cite the data record: DRE-LZSH: A SEEG Benchmark Dataset and Pilot Exploration for Advancing Precision Medicine in Drug-Resistant Epilepsy. Zenodo (2025). doi:10.5281/zenodo.17272689.",
   "Funding": [],
   "EthicsApprovals": [
     "Medical Ethics Committee of the Second Hospital of Lanzhou University, approval number 2023A-765. Source: Wang Y et al. (2026), IEEE Trans Neural Syst Rehabil Eng, doi:10.1109/TNSRE.2026.3702844."
   ],
-  "ReferencesAndLinks": ["https://doi.org/10.5281/zenodo.17272689"],
-  "DatasetDOI": "doi:10.5281/zenodo.17272689",
-  "Keywords": ["stereo-EEG", "SEEG", "drug-resistant epilepsy", "seizure", "ictal", "interictal", "epileptogenic zone", "high-frequency oscillations", "benchmark"],
-  "SourceDatasets": [{"DOI": "doi:10.5281/zenodo.17272689", "URL": "https://zenodo.org/records/17272689", "Version": "Zenodo record 17272689 (published 2025-10-05)"}],
-  "GeneratedBy": [{"Name": "b3w2_convert_c-drelzsh.py", "Description": "Lossless re-packaging of the release MATLAB arrays into BrainVision (float32) with BIDS sidecars; no filtering, resampling, re-referencing or channel removal.", "CodeURL": "n/a"}]
+  "ReferencesAndLinks": [
+    "https://doi.org/10.5281/zenodo.17272689"
+  ],
+  "DatasetDOI": "10.82901/nemar.nm000413",
+  "Keywords": [
+    "stereo-EEG",
+    "SEEG",
+    "drug-resistant epilepsy",
+    "seizure",
+    "ictal",
+    "interictal",
+    "epileptogenic zone",
+    "high-frequency oscillations",
+    "benchmark"
+  ],
+  "SourceDatasets": [
+    {
+      "DOI": "doi:10.5281/zenodo.17272689",
+      "URL": "https://zenodo.org/records/17272689",
+      "Version": "Zenodo record 17272689 (published 2025-10-05)"
+    }
+  ],
+  "GeneratedBy": [
+    {
+      "Name": "b3w2_convert_c-drelzsh.py",
+      "Description": "Lossless re-packaging of the release MATLAB arrays into BrainVision (float32) with BIDS sidecars; no filtering, resampling, re-referencing or channel removal.",
+      "CodeURL": "n/a"
+    }
+  ],
+  "Version": "1.0.0"
 }
