@@ -1,9 +1,9 @@
 {
   "version": "2.0",
   "pipeline_stage": "validated",
-  "title": "DRE-LZSH: SEEG benchmark dataset for drug-resistant epilepsy (ictal and interictal segments, 29 patients)",
-  "description": "A stereo-EEG (SEEG) benchmark dataset from 29 patients with drug-resistant epilepsy, containing ictal (seizure) and interictal segments recorded at 2000 Hz. It includes clinical information and channel-level epileptogenic-zone annotations. The data are re-packaged in iEEG-BIDS from the authors' public Zenodo release without signal processing, and the dataset also carries the authors' HFO detection code and result tables.",
-  "methods_description": "SEEG segments were recorded at 2000 Hz, with ictal segments typically 40-60 s and interictal segments longer. The original MATLAB arrays were converted losslessly to BrainVision float32 with BIDS sidecars, with no filtering, resampling, re-referencing or channel removal. Electrode coordinates are not available.",
+  "title": "Wang-2026-localizing-10.1109/tnsre.2026.3702844",
+  "description": "Stereo-EEG (SEEG) recordings from 29 patients with drug-resistant epilepsy, comprising ictal and interictal segments together with clinical information and channel-level epileptogenic-zone annotations. The data are a lossless iEEG-BIDS re-packaging of the DRE-LZSH benchmark release (Zenodo 17272689), sampled at 2000 Hz, and are described by the associated TNSRE paper (doi:10.1109/TNSRE.2026.3702844). Authors' derived results (HFO rates, 1/f spectral fits) and analysis code are included. Caveat: the P014 epileptogenic-zone and deleted-channel annotations in the release appear to be a copy of the P007 row (several channel numbers exceed P014's channel count) and should not be used without confirmation from the authors.",
+  "methods_description": "SEEG segments recorded at 2000 Hz, covering seizure (typically 40-60 s) and longer interictal segments. MATLAB arrays from the original release were converted to BrainVision float32 with BIDS sidecars, with no filtering, resampling, re-referencing or channel removal. Electrode coordinates are not available.",
   "license": "CC-BY-4.0",
   "dataset_type": "raw",
   "authors": {
@@ -23,16 +23,25 @@
       "term": "stereo-EEG"
     },
     {
+      "term": "SEEG"
+    },
+    {
       "term": "drug-resistant epilepsy"
     },
     {
-      "term": "seizure"
+      "term": "Seizures",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D012640"
     },
     {
-      "term": "ictal"
+      "term": "Epilepsy",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004827"
     },
     {
-      "term": "interictal"
+      "term": "Electroencephalography",
+      "subject_scheme": "MeSH",
+      "value_uri": "http://id.nlm.nih.gov/mesh/D004569"
     },
     {
       "term": "epileptogenic zone"
@@ -41,9 +50,16 @@
       "term": "high-frequency oscillations"
     },
     {
-      "term": "Drug Resistant Epilepsy",
-      "subject_scheme": "MeSH",
-      "value_uri": "http://id.nlm.nih.gov/mesh/D000069279"
+      "term": "intracranial EEG"
+    },
+    {
+      "term": "ictal"
+    },
+    {
+      "term": "interictal"
+    },
+    {
+      "term": "benchmark"
     }
   ],
   "related_identifiers": [
@@ -60,6 +76,11 @@
     {
       "identifier": "https://nemar.org/dataset/nm000413",
       "identifier_type": "URL",
+      "relation_type": "IsDescribedBy"
+    },
+    {
+      "identifier": "10.1109/TNSRE.2026.3702844",
+      "identifier_type": "DOI",
       "relation_type": "IsDescribedBy"
     }
   ],
@@ -84,5 +105,5 @@
     ".xlsx",
     ".yml"
   ],
-  "source_hash": "219ba767ac8dd5b3934446ec8c9a8345a83bbe3f405c73fdf607ecabf086f91a"
+  "source_hash": "3869d9c2d0834d9c9fab0bb5dbc1d3232d1bc8b6762b70dc3e89ca6a19214eb4"
 }
