@@ -1,3 +1,7 @@
+1.0.3 2026-10-19
+  - Units: SEEG/EEG/ECG channels of 190 recordings declared V in channels.tsv and the .vhdr headers (were n/a / unscaled), inferred from the stored values' Nihon Kohden int16 grid (9.76e-8 = 6400 µV/65535) and +-3200 µV clipping; MISC stays n/a. The 190 .vhdr files are now plain git files (were annexed). Data unchanged.
+  - sub-P029 task-ictal run-01: channels.tsv status_description notes a whole-run artefact (about 20x the other runs, samples at the +-3.2 mV export limit); kept as released.
+
 1.0.2 2026-10-16
   - Restore the descriptive Name from v1.0.0 after the v1.0.1 naming regression.
 1.0.0 2026-10-08

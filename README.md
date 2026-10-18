@@ -46,3 +46,9 @@ not mapped onto `channels.tsv`.
 ## License
 
 CC-BY-4.0
+
+## Units (added 2026-10-19, version 1.0.3)
+
+SEEG, EEG and ECG channels now say `V` in channels.tsv and in the BrainVision headers (were `n/a` / `unscaled`); MISC channels stay `n/a`. The release does not state the unit. **Unit inferred from the quantisation grid and range of the stored values, not stated in the release**: in every run checked (one per patient, 33 runs, 19 Oct 2026) the values sit on a grid of 9.76e-8 (= 6400 µV / 65535, the int16 step of a Nihon Kohden EDF export with a +-3200 µV range, as the `POL`/`EEG ...-Ref` channel names suggest) and clip at exactly +-0.0032 (= 3200 µV). The release MAT files also carry an MNE-style `info` structure, and MNE stores volts. Robust SD after a 1 Hz high-pass (median per run, 1 recording per patient, 33 runs): SEEG 5-220 µV, except sub-P029 ictal run-01 (below). The values themselves are unchanged (MNE already read them as volts with scale 1; the label is now explicit).
+
+sub-P029 task-ictal run-01: every channel has a robust SD of 0.9-1.6 mV, about 20x the patient's other ictal runs (0.05-0.14 mV), and up to 20% of its samples sit at the +-3.2 mV export limit. This is an artefact or a saturated amplifier in the release recording, not a unit problem; the run is kept as released and its channels.tsv `status_description` says so. Evidence files: fix1019 `out/pubamp/` (Voyager Jobs ieeg-f19-pa-*, 19 Oct 2026).

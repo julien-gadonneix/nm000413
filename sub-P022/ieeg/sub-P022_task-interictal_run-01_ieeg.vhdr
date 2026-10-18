@@ -1,1 +1,96 @@
-/annex/objects/SHA256E-s2552--b9000c38ed637470ebbee0b7973c8a5664a7d9a0859bbe9c588d4a2a20539f0c.vhdr
+Brain Vision Data Exchange Header File Version 1.0
+; Written by harness/b3w2_convert_c-drelzsh.py (ieeg-nemar-20261005 campaign, batch-3 lane W2); values = stored float64 values rounded to float32
+
+[Common Infos]
+Codepage=UTF-8
+DataFile=sub-P022_task-interictal_run-01_ieeg.eeg
+MarkerFile=sub-P022_task-interictal_run-01_ieeg.vmrk
+DataFormat=BINARY
+DataOrientation=MULTIPLEXED
+NumberOfChannels=79
+SamplingInterval=500
+
+[Binary Infos]
+BinaryFormat=IEEE_FLOAT_32
+
+[Channel Infos]
+; Each entry: Ch<Channel number>=<Name>,<Reference channel name>,<Resolution in "Unit">,<Unit>
+Ch1=POL A`1,,1,V
+Ch2=POL A`2,,1,V
+Ch3=POL A`3,,1,V
+Ch4=POL A`4,,1,V
+Ch5=POL A`5,,1,V
+Ch6=POL A`6,,1,V
+Ch7=POL A`7,,1,V
+Ch8=POL A`8,,1,V
+Ch9=POL A`9,,1,V
+Ch10=POL A`10,,1,V
+Ch11=POL B`1,,1,V
+Ch12=POL B`2,,1,V
+Ch13=POL B`3,,1,V
+Ch14=POL B`4,,1,V
+Ch15=POL B`5,,1,V
+Ch16=POL B`6,,1,V
+Ch17=POL B`7,,1,V
+Ch18=POL B`8,,1,V
+Ch19=POL B`9,,1,V
+Ch20=POL E,,1,unscaled
+Ch21=POL B`10,,1,V
+Ch22=POL B`11,,1,V
+Ch23=POL A`11,,1,V
+Ch24=POL A`12,,1,V
+Ch25=POL B`12,,1,V
+Ch26=POL C`1,,1,V
+Ch27=POL C`2,,1,V
+Ch28=POL C`3,,1,V
+Ch29=POL C`4,,1,V
+Ch30=POL C`5,,1,V
+Ch31=POL C`6,,1,V
+Ch32=POL C`7,,1,V
+Ch33=POL C`8,,1,V
+Ch34=POL C`9,,1,V
+Ch35=POL C`10,,1,V
+Ch36=POL C`11,,1,V
+Ch37=POL C`12,,1,V
+Ch38=POL DC10,,1,unscaled
+Ch39=POL D`1,,1,V
+Ch40=POL D`2,,1,V
+Ch41=POL D`3,,1,V
+Ch42=POL D`4,,1,V
+Ch43=POL D`5,,1,V
+Ch44=POL D`6,,1,V
+Ch45=POL D`7,,1,V
+Ch46=POL D`8,,1,V
+Ch47=POL D`9,,1,V
+Ch48=POL D`10,,1,V
+Ch49=POL D`11,,1,V
+Ch50=POL D`12,,1,V
+Ch51=POL E`1,,1,V
+Ch52=POL E`2,,1,V
+Ch53=POL E`3,,1,V
+Ch54=POL E`4,,1,V
+Ch55=POL E`5,,1,V
+Ch56=POL E`6,,1,V
+Ch57=POL E`7,,1,V
+Ch58=POL E`8,,1,V
+Ch59=POL E`9,,1,V
+Ch60=POL E`10,,1,V
+Ch61=POL E`11,,1,V
+Ch62=POL E`12,,1,V
+Ch63=EEG A1-Ref,,1,V
+Ch64=EEG A2-Ref,,1,V
+Ch65=POL A3,,1,V
+Ch66=POL A4,,1,V
+Ch67=POL A5,,1,V
+Ch68=POL A6,,1,V
+Ch69=POL A7,,1,V
+Ch70=POL A8,,1,V
+Ch71=POL A9,,1,V
+Ch72=POL A10,,1,V
+Ch73=POL A11,,1,V
+Ch74=POL A12,,1,V
+Ch75=POL A13,,1,V
+Ch76=POL A14,,1,V
+Ch77=POL A15,,1,V
+Ch78=POL A16,,1,V
+Ch79=POL EKG,,1,V
