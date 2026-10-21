@@ -26,8 +26,10 @@ not mapped onto `channels.tsv`.
   `sz4-1`). `sub-<P>/sub-<P>_scans.tsv` gives the source file of every run. The release does not document where an
   ictal segment starts relative to seizure onset, so there are no events.
 - 2000 Hz. Channel names are kept verbatim from the export (`POL A'1`, `EEG C3-Ref`, `POL ECG`, ...). Types are
-  inferred from the names (SEEG, EEG for the scalp channels, ECG, MISC; see `task-*_channels.json`). Units are not
-  stated (`n/a`); the magnitudes are consistent with volts.
+  inferred from the names (SEEG, EEG for the scalp channels, ECG, MISC; see `task-*_channels.json`). Units: volts
+  for SEEG/EEG/ECG (MISC left `n/a`). The release's own code (`code/dre-lzsh-release/1f code`) reads the Nihon Kohden
+  EDFs with MNE (`raw.get_data()`, volts), and its per-channel PSD tables (`derivatives/dre-lzsh-results/1f -results`)
+  match the stored values (median band-power ratio 0.5-2 in 29/29 participants).
 - The release stores three MATLAB layouts: `eeg_data` with an MNE-style `info` struct, `data` with `ch_names`, and `data`
   with `channel_names` and a channel count. All three are read as stored. Each segment became one BrainVision run (IEEE
   float32: the stored float64 values rounded to float32), and the round-trip check compares every run with its source.
