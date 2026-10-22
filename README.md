@@ -29,7 +29,9 @@ not mapped onto `channels.tsv`.
   inferred from the names (SEEG, EEG for the scalp channels, ECG, MISC; see `task-*_channels.json`). Units: volts
   for SEEG/EEG/ECG (MISC left `n/a`). The release's own code (`code/dre-lzsh-release/1f code`) reads the Nihon Kohden
   EDFs with MNE (`raw.get_data()`, volts), and its per-channel PSD tables (`derivatives/dre-lzsh-results/1f -results`)
-  match the stored values (median band-power ratio 0.5-2 in 29/29 participants).
+  agree with the stored values in scale. Per-participant median band-power ratio (stored / table): 0.80-2.03 for the
+  interictal runs (all six bands within 0.5-2 for 28 of 29 participants) and 0.0008-4.5 for the ictal runs (22 of 29;
+  not P004, P007, P013, P014, P018, P020, P025). Values in µV would give ratios of about 1e12.
 - The release stores three MATLAB layouts: `eeg_data` with an MNE-style `info` struct, `data` with `ch_names`, and `data`
   with `channel_names` and a channel count. All three are read as stored. Each segment became one BrainVision run (IEEE
   float32: the stored float64 values rounded to float32), and the round-trip check compares every run with its source.
