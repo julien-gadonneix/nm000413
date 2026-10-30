@@ -27,12 +27,7 @@ not mapped onto `channels.tsv`.
   ictal segment starts relative to seizure onset, so there are no events.
 - 2000 Hz. Channel names are kept verbatim from the export (`POL A'1`, `EEG C3-Ref`, `POL ECG`, ...). Types are
   inferred from the names (SEEG, EEG for the scalp channels, ECG, MISC; see `task-*_channels.json`). Units are not
-  stated (`n/a`): no `.mat` file, table or script of the release gives a unit, scale or gain. The stored values agree
-  in scale with the release's per-channel PSD tables (`derivatives/dre-lzsh-results/1f -results`), which its notebook
-  (`code/dre-lzsh-release/1f code`) computes from the Nihon Kohden EDFs read with MNE `read_raw_edf` and `get_data`.
-  Per-participant median band-power ratio (stored / table): 0.80-2.03 for the interictal runs (all six bands within
-  0.5-2 for 28 of 29 participants) and 0.0008-4.5 for the ictal runs (22 of 29; not P004, P007, P013, P014, P018,
-  P020, P025). Receipt: `code/receipts/2026-10-30_units-na.md`.
+  stated (`n/a`); the magnitudes are consistent with volts.
 - The release stores three MATLAB layouts: `eeg_data` with an MNE-style `info` struct, `data` with `ch_names`, and `data`
   with `channel_names` and a channel count. All three are read as stored. Each segment became one BrainVision run (IEEE
   float32: the stored float64 values rounded to float32), and the round-trip check compares every run with its source.
@@ -47,6 +42,16 @@ not mapped onto `channels.tsv`.
 - `sourcedata/zenodo-17272689/DRE-LZSH/`: the original `.mat` files and the two information-list spreadsheets. The only
   change is that the MATLAB header text "Created on" (file export date, April and June 2025) has its weekday and day
   masked. The provenance JSON gives the SHA-256 of each file before and after masking.
+
+## Units (version 1.0.3)
+
+Units stay `n/a`: no `.mat` file, table or script of the release gives a unit, scale or gain. The release's per-channel
+PSD tables (`derivatives/dre-lzsh-results/1f -results`), which its notebook (`code/dre-lzsh-release/1f code`) computes
+from the Nihon Kohden EDFs read with MNE `read_raw_edf` and `get_data`, were compared with the same band powers of the
+stored values. Per-participant median band-power ratio (stored / table): 0.80-2.03 for the interictal runs (all six
+bands within 0.5-2 for 28 of 29 participants) and 0.0008-4.5 for the ictal runs (22 of 29; not P004, P007, P013, P014,
+P018, P020, P025), whose tables come from filtered segments cropped at limits that are not released. Receipt:
+`code/receipts/2026-10-30_units-na.md`.
 
 ## License
 
